@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func main() {
+
+	printDefaultValues()
+	fmt.Println()
+
 	var name string = "Subhadeep Sen"
 	var age int = 26
 	var salary float64 = 25316.45
@@ -28,4 +32,16 @@ func main() {
 
 	const PI float64 = 3.14
 	fmt.Println("Constant value of PI", PI)
+}
+
+func printDefaultValues() {
+	var name string
+	var age int
+	var salary float64
+	var isEmployeed bool
+
+	fmt.Println("Default value of string", name)
+	fmt.Println("Default value of int", age)
+	fmt.Println("Default value of float", salary)
+	fmt.Println("Default value of bool", isEmployeed)
 }
